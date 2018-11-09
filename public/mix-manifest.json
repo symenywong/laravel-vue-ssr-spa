@@ -1,0 +1,9 @@
+{
+    "/index/js/entry-client.js": "/index/js/entry-client.js",
+    "/index/css/app.css": "/index/css/app.css",
+    "/admin/css/app.css": "/admin/css/app.css",
+    "/mobile/css/app.css": "/mobile/css/app.css",
+    "/index/js/entry-server.js": "/index/js/entry-server.js",
+    "/admin/js/app.js": "/admin/js/app.js",
+    "/mobile/js/app.js": "/mobile/js/app.js"
+}

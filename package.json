@@ -1,0 +1,54 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "build": "npm run production && npm run copy",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=./webpack.config.js",
+        "watch": "node ./md5File.js --env=dev && npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=./webpack.config.js",
+        "ii": "npm install --registry https://registry.npm.taobao.org",
+        "copy": "node ./md5File.js"
+    },
+    "devDependencies": {
+        "axios": "^0.18",
+        "babel-plugin-syntax-dynamic-import": "^6.18.0",
+        "bootstrap": "^4.0.0",
+        "clean-webpack-plugin": "^0.1.19",
+        "cross-env": "^5.1",
+        "jquery": "^3.2",
+        "laravel-mix": "^2.0",
+        "lodash": "^4.17.5",
+        "popper.js": "^1.12",
+        "vue": "^2.5.7",
+        "vux-loader": "^1.2.9",
+        "webpack-transform-modules-plugin": "^0.4.1"
+    },
+    "dependencies": {
+        "compression-webpack-plugin": "^1.1.11",
+        "cube-ui": "^1.12.2",
+        "iview": "^3.1.4",
+        "js-cookie": "^2.2.0",
+        "vue-router": "^3.0.1",
+        "vue-server-renderer": "^2.5.17",
+        "vuex": "^3.0.1",
+        "vux": "^2.9.2"
+    },
+    "config": {
+        "webpack": "./webpack.config.js"
+    },
+    "transformModules": {
+        "cube-ui": {
+            "transform": "cube-ui/lib/${member}",
+            "kebabCase": true,
+            "style": {
+                "ignore": [
+                    "create-api",
+                    "better-scroll",
+                    "locale"
+                ]
+            }
+        }
+    }
+}

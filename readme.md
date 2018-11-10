@@ -81,12 +81,13 @@ cd laravel-vue-ssr-spa
 
    ![watch界面](https://github.com/symenywong/laravel-vue-ssr-spa/blob/master/public/images/watch.png?raw=true)
 
-   此时浏览器打开 http://localhost:8000/
+   此时浏览器打开 http://localhost:8000/, 查看
+
    ![dev界面](https://github.com/symenywong/laravel-vue-ssr-spa/blob/master/public/images/dev.png?raw=true)
 
    ![admin界面](https://github.com/symenywong/laravel-vue-ssr-spa/blob/master/public/images/admin.png?raw=true)
 
-   ![mobile界面](https://github.com/symenywong/laravel-vue-ssr-spa/blob/master/public/images/mobile.png?raw=true)
+   <img src="https://github.com/symenywong/laravel-vue-ssr-spa/blob/master/public/images/mobile.png?raw=true" width="380">
 
 
    * 3.3 buid 生产环境, 在项目目录执行, 启动 webpack 自动构建服务, 生成 jss、css以及对应的 gzip 压缩文件,

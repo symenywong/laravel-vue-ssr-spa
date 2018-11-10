@@ -5,7 +5,7 @@
 
 # Laravel-Vue-SSR-SPA
 
-#### A quickly app demo built on Laravel & Vue.js.
+#### 基于 Laravel+Vue+Webpack的工程项目，包括前台系统,后台管理系统,移动端系统, 支出前台系统 SSR, 后台移动端前后分离方案
 
 ## Features
 - Server-side-render width Laravel

@@ -23,7 +23,7 @@
 
   **确保你已经安装composer**
 
-  [Laravel 安装教程](https://docs.golaravel.com/docs/5.6/installation/)
+  [Laravel 文档](https://docs.golaravel.com/docs/5.6/installation/)
 
   [composer 安装教程](https://docs.phpcomposer.com/00-intro.html)
 

@@ -11,7 +11,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');//引入
 
 webpackConfig.resolve.alias['cube-ui']='cube-ui/lib';
 
-webpackConfig.plugins.push(new CleanWebpackPlugin(['public/mobile','public/admin','public/index','public/wap']));
+webpackConfig.plugins.push(new CleanWebpackPlugin(['public/mobile','public/admin','public/index']));
 
 if (process.env.NODE_ENV=='production') {
   webpackConfig.output={

@@ -216,3 +216,22 @@ cd laravel-vue-ssr-spa
  mix.js('resources/assets/mobile/app.js', 'public/mobile/js')
  .sass('resources/sass/mobile/app.scss', 'public/mobile/css');
  ```
+
+---------
+
+#### 传送门
+[NodeJs](https://nodejs.org/en/)
+
+[Laravel](https://laravel.com/)
+
+[Vue](https://vuejs.org/)
+
+[iview](https://www.iviewui.com/docs/guide/introduce)
+
+[spatie/laravel-server-side-rendering](https://github.com/spatie/laravel-server-side-rendering)
+
+[Vue-Router](http://router.vuejs.org)
+
+[Vuex](https://vuex.vuejs.org)
+
+[axios](https://www.npmjs.com/package/axios)

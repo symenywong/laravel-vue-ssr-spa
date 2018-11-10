@@ -60,12 +60,12 @@ cd laravel-vue-ssr-spa
 * 2.2 安装前端依赖
 
   ```
-npm install
+  npm install
   ```
 * 2.3 安装composer 依赖
-```
-composer install
-```
+  ```
+  composer install
+  ```
 * 2.4 根目录手动修改.env 文件, 添加如下配置
   ```
   NODE_PATH=/usr/local/bin/

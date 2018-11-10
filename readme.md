@@ -19,7 +19,7 @@
 
 * 1.1 php 环境
 
-  **确保你已经安装 Laravel  以及 composer**
+  **确保你已经安装composer**
 
   [Laravel 安装教程](https://docs.golaravel.com/docs/5.6/installation/)
 
@@ -32,7 +32,7 @@
 
   [node 官网](https://nodejs.org/en/)
 
-  安装完成, 检查node版本>8.0
+  安装完成, 检查node版本>10.0
   ```
   node -v
   ```

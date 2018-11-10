@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://laravel.com/assets/img/components/logo-laravel.svg">
-  <img src="https://vuejs.org//images/logo.png" width="72" hegiht="72">
+  <img src="https://vuejs.org//images/logo.png" width="70" hegiht="70">
 </p>
 
 # Laravel-Vue-SSR-SPA

@@ -15,5 +15,5 @@
       </div>
     </body>
 
- <script type="text/javascript" src="{{ asset('mobile/js/app.js') }}"></script> 
+ <script type="text/javascript" src="/mobile/js/app.a42a6.js"></script> 
 </html>

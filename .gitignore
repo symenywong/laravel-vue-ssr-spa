@@ -5,6 +5,7 @@
 /public/admin
 /public/index
 /public/*.js
+/public/mix-manifest.json
 /storage/*.key
 /vendor
 /.idea

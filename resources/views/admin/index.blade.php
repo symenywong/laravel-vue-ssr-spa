@@ -14,5 +14,5 @@
       </div>
     </body>
 
- <script type="text/javascript" src="{{ asset('admin/js/app.js') }}"></script> 
+ <script type="text/javascript" src="/admin/js/app.cc3bc.js"></script> 
 </html>

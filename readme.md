@@ -87,43 +87,43 @@ cd laravel-vue-ssr-spa
    ```
 
 ### 内置插件
-项目目录
-```
-|--app
-|  |--Http
-|     |--Controllers
-|--bootstrap
-|--config
-|--database
-|--config
-|--node_modules
-|--public
-|--resources                       // 资源文件
-|  |--assets                       // vue 模板渲染
-|     |--admin
-|     |--home
-|     |--mobile
-|  |--sass                        // sass style
-|     |--admin
-|     |--home
-|     |--mobile
-|  |--views                       // laravel 解析blade模板
-|     |--admin
-|     |--home
-|     |--mobile
-|--routes
-|--storage
-|--tests
-|--vendor
-|--resources
-|--resources
-```
+  项目目录
+  ```
+  |--app
+  |  |--Http
+  |     |--Controllers
+  |--bootstrap
+  |--config
+  |--database
+  |--config
+  |--node_modules
+  |--public
+  |--resources                       // 资源文件
+  |  |--assets                       // vue 模板渲染
+  |     |--admin
+  |     |--home
+  |     |--mobile
+  |  |--sass                        // sass style
+  |     |--admin
+  |     |--home
+  |     |--mobile
+  |  |--views                       // laravel 解析blade模板
+  |     |--admin
+  |     |--home
+  |     |--mobile
+  |--routes
+  |--storage
+  |--tests
+  |--vendor
+  |--resources
+  |--resources
+  ```
 ### 内置插件
-##### 前端
- * [vue](https://vuejs.org/v2/guide/)
- * [vue-router](https://router.vuejs.org/)
- * [vuex](https://vuex.vuejs.org/)
- * [axios](https://www.npmjs.com/package/axios)
+  ##### 前端
+   * [vue](https://vuejs.org/v2/guide/)
+   * [vue-router](https://router.vuejs.org/)
+   * [vuex](https://vuex.vuejs.org/)
+   * [axios](https://www.npmjs.com/package/axios)
 
 ##### laravel服务端
  * [spatie/laravel-server-side-rendering](https://github.com/spatie/laravel-server-side-rendering)
@@ -131,19 +131,19 @@ cd laravel-vue-ssr-spa
 #### webpack命令说明
  * 项目内置命令如下
 
-```
-"scripts": {
-    "dev": "npm run development",
-    "build": "npm run production && npm run copy",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=./webpack.config.js",
-    "watch": "node ./md5File.js --env=dev && npm run development -- --watch",
-    "watch-poll": "npm run watch -- --watch-poll",
-    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=./webpack.config.js",
-    "ii": "npm install --registry https://registry.npm.taobao.org",
-    "copy": "node ./md5File.js"
-},
-```
+  ```
+  "scripts": {
+      "dev": "npm run development",
+      "build": "npm run production && npm run copy",
+      "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=./webpack.config.js",
+      "watch": "node ./md5File.js --env=dev && npm run development -- --watch",
+      "watch-poll": "npm run watch -- --watch-poll",
+      "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+      "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=./webpack.config.js",
+      "ii": "npm install --registry https://registry.npm.taobao.org",
+      "copy": "node ./md5File.js"
+  },
+  ```
  * npm run watch 启动dev开发环境, 并启用动态热加载, sass 预处理等任务
  * npm run build 执行生产环境下的编译打包任务, 执行完成后将生成 js与css 打包压缩文件
  * npm run ii 墙内用户执行npm 安装失败, 可选择此命令切换taobao 镜像源安装

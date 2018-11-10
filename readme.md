@@ -75,7 +75,7 @@ cd laravel-vue-ssr-spa
    ```
    npm run watch
    ```
-   ![运行界面](https://github.com/symenywong/laravel-vue-ssr-spa/public/images/watch.png)
+   ![运行界面](https://github.com/symenywong/laravel-vue-ssr-spa/blob/master/public/images/watch.png?raw=true)
 
    * 3.3 buid 生产环境, 在项目目录执行, 启动 webpack 自动构建服务
    ```

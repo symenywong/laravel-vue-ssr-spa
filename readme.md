@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://laravel.com/assets/img/components/logo-laravel.svg">
-  <img src="https://vuejs.org//images/logo.png" width="80" hegiht="80">
+  <img src="https://vuejs.org//images/logo.png" width="72" hegiht="72">
 </p>
 
 # Laravel-Vue-SSR-SPA
@@ -177,7 +177,7 @@ cd laravel-vue-ssr-spa
 ##### 2. webpack.mix.js  说明
 
  框架内置3套工程方案
-  * 1. pc 内置插件
+  * 1. PC 内置插件
 
   ```
   > iview

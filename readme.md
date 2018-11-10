@@ -13,7 +13,7 @@
  - mobile 项目采用前后端分离架构 SPA
 
 
-## Install
+## Install, 只需3步即可
 
 #### 1. 环境需求
 
@@ -81,7 +81,7 @@ cd laravel-vue-ssr-spa
 
    ![watch界面](https://github.com/symenywong/laravel-vue-ssr-spa/blob/master/public/images/watch.png?raw=true)
 
-   此时浏览器打开 http://localhost:8000/, 查看
+   此时浏览器打开 http://localhost:8000/, 查看各工程界面
 
    ![dev界面](https://github.com/symenywong/laravel-vue-ssr-spa/blob/master/public/images/dev.png?raw=true)
 
@@ -137,6 +137,8 @@ cd laravel-vue-ssr-spa
   |--webpack.mix.js
   ...
   ```
+------
+#### 了解更多? 请阅读一下内容
 ### 内置插件
   ##### 前端
    * [vue](https://vuejs.org/v2/guide/)
@@ -172,16 +174,34 @@ cd laravel-vue-ssr-spa
  * webpack.config.js 说明
 
   laravel-mix本身内置 webpack 打包方案, 但是存在如下问题需要解决
-  - 1. 生产环境每次生成的 js/css 文件名称相同, 会造成浏览器缓存, 无法有效避免缓存造成的影响, 因此采用 webpack 打包时, 对文件名进行 md5 扩展, 文件变动则随之生成新的 md5 文件名称
-  - 2. js/css静态资源请求,造成用户等待时间过长, 如何压缩文件体积, 减少资源请求, 将会很大程度的提升用户体验, 框架内置 compression-webpack-plugin 对生成的文件进行 gzip 压缩, 同时生成 非压缩文件与压缩文件
+  * 1. 生产环境每次生成的 js/css 文件名称相同, 会造成浏览器缓存, 无法有效避免缓存造成的影响, 因此采用 webpack 打包时, 对文件名进行 md5 扩展, 文件变动则随之生成新的 md5 文件名称
+  * 2. js/css静态资源请求,造成用户等待时间过长, 如何压缩文件体积, 减少资源请求, 将会很大程度的提升用户体验, 框架内置 compression-webpack-plugin 对生成的文件进行 gzip 压缩, 同时生成 非压缩文件与压缩文件
   ,需要注意的是此方案需要服务端开启 gzip 请求配置
 
  * webpack.mix.js  说明
 
  框架内置3套工程方案
-  - 1. pc
-  - 2. admin
-  - 3. mobile
+  * 1. pc 内置插件如下
+  ```
+  > iview
+  > vue-router
+  > vuex
+  > axios
+  ```
+  * 2. admin
+  ```
+  > iview
+  > vue-router
+  > vuex
+  > axios
+  ```
+  * 3. mobile
+  ```
+  > cube-ui
+  > vue-router
+  > vuex
+  > axios
+  ```
 
  ```
  //home

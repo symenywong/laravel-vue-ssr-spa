@@ -1,65 +1,180 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
-
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+  <img src="https://laravel.com/assets/img/components/logo-laravel.svg">
+  <img src="https://vuejs.org//images/logo.png" width="80" hegiht="80">
 </p>
 
-## About Laravel
+# Laravel-Vue-SSR-SPA
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+#### A quickly app demo built on Laravel & Vue.js.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Features
+- Server-side-render width Laravel
+- Vue supported for view template inside
+- Vue-Router/Vuex
+- SPA framework
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+## 方案
+ - home   即前端用户可见页面, 采用 laravel-vue 服务端渲染方案
+ - admin  项目采用前后端分离架构
+ - mobile 项目采用前后端分离架构
 
-## Learning Laravel
+## Install
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
+##### 1. 环境需求
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+* 1.1 php 环境
 
-## Laravel Sponsors
+  **确保你已经安装 Laravel  以及 composer**
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
+  [Laravel 安装教程](https://docs.golaravel.com/docs/5.6/installation/)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
+  [composer 安装教程](https://docs.phpcomposer.com/00-intro.html)
 
-## Contributing
+* 1.2 nodejs 环境
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+  **确保你已经安装node,推荐安装最新稳定版node**
+  > node 内置 npm , 已安装完成 node 即可, 无需单独安装 npm
 
-## Security Vulnerabilities
+  [node 官网](https://nodejs.org/en/)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+  安装完成, 检查node版本>8.0
+  ```
+  node -v
+  ```
+  npm 版本>5.6
+  ```
+  npm -v
+  ```
 
-## License
+##### 2. clone代码,安装依赖
+ * 2.1 clone或者下载项目代码, git clone
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+  ```
+git clone https://github.com/symenywong/laravel-vue-ssr-spa.git
+  ```
+项目 clone 下来后执行如下操作, 进入当前文件夹, 例如, 当前项目文件夹为 laravel-vue-ssr-spa
+```
+cd laravel-vue-ssr-spa
+```
+
+* 2.2 安装前端依赖
+
+  ```
+npm install
+  ```
+* 2.3 安装composer 依赖
+```
+composer install
+```
+* 2.4 根目录手动修改.env 文件, 添加如下配置
+  ```
+  NODE_PATH=/usr/local/bin/
+  ```
+
+##### 3.现在运行服务,检查是否正确启动
+   * 3.1 在项目目录执行, 启动 php 服务, 查看 ```http://localhost:8000/```
+   ```
+   php artisan serve
+   ```
+   * 3.2 dev 开发环境, 在项目目录执行, 启动 webpack 自动构建服务
+   ```
+   npm run watch
+   ```
+
+   * 3.3 buid 生产环境, 在项目目录执行, 启动 webpack 自动构建服务
+   ```
+   npm run build
+   ```
+
+### 内置插件
+项目目录
+```
+|--app
+|  |--Http
+|     |--Controllers
+|--bootstrap
+|--config
+|--database
+|--config
+|--node_modules
+|--public
+|--resources                       // 资源文件
+|  |--assets                       // vue 模板渲染
+|     |--admin
+|     |--home
+|     |--mobile
+|  |--sass                        // sass style
+|     |--admin
+|     |--home
+|     |--mobile
+|  |--views                       // laravel 解析blade模板
+|     |--admin
+|     |--home
+|     |--mobile
+|--routes
+|--storage
+|--tests
+|--vendor
+|--resources
+|--resources
+```
+### 内置插件
+##### 前端
+ * [vue](https://vuejs.org/v2/guide/)
+ * [vue-router](https://router.vuejs.org/)
+ * [vuex](https://vuex.vuejs.org/)
+ * [axios](https://www.npmjs.com/package/axios)
+
+##### laravel服务端
+ * [spatie/laravel-server-side-rendering](https://github.com/spatie/laravel-server-side-rendering)
+
+#### webpack命令说明
+ * 项目内置命令如下
+
+```
+"scripts": {
+    "dev": "npm run development",
+    "build": "npm run production && npm run copy",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=./webpack.config.js",
+    "watch": "node ./md5File.js --env=dev && npm run development -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=./webpack.config.js",
+    "ii": "npm install --registry https://registry.npm.taobao.org",
+    "copy": "node ./md5File.js"
+},
+```
+ * npm run watch 启动dev开发环境, 并启用动态热加载, sass 预处理等任务
+ * npm run build 执行生产环境下的编译打包任务, 执行完成后将生成 js与css 打包压缩文件
+ * npm run ii 墙内用户执行npm 安装失败, 可选择此命令切换taobao 镜像源安装
+
+#### webpack 说明
+
+ * webpack.config.js 说明
+
+  laravel-mix本身内置 webpack 打包方案, 但是存在如下问题需要解决
+  - 1. 生产环境每次生成的 js/css 文件名称相同, 会造成浏览器缓存, 无法有效避免缓存造成的影响, 因此采用 webpack 打包时, 对文件名进行 md5 扩展, 文件变动则随之生成新的 md5 文件名称
+  - 2. js/css静态资源请求,造成用户等待时间过长, 如何压缩文件体积, 减少资源请求, 将会很大程度的提升用户体验, 框架内置 compression-webpack-plugin 对生成的文件进行 gzip 压缩, 同时生成 非压缩文件与压缩文件
+  ,需要注意的是此方案需要服务端开启 gzip 请求配置
+
+ * webpack.mix.js  说明
+
+ 框架内置3套工程方案
+  - 1. pc
+  - 2. admin
+  - 3. mobile
+
+ ```
+ //home
+ mix.js('resources/assets/home/entry-client.js', 'public/index/js')
+ .js('resources/assets/home/entry-server.js', 'public/index/js')
+ .sass('resources/sass/home/app.scss', 'public/index/css')
+
+ //admin
+ mix.js('resources/assets/admin/app.js', 'public/admin/js')
+ .sass('resources/sass/admin/app.scss', 'public/admin/css');
+
+ //mobile
+ mix.js('resources/assets/mobile/app.js', 'public/mobile/js')
+ .sass('resources/sass/mobile/app.scss', 'public/mobile/css');
+ ```

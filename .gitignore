@@ -1,6 +1,10 @@
 /node_modules
 /public/hot
 /public/storage
+/public/mobile
+/public/admin
+/public/index
+/public/*.js
 /storage/*.key
 /vendor
 /.idea

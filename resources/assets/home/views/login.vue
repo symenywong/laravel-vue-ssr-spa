@@ -8,7 +8,7 @@ export default {
   name:'login',
   data:function(){
     return {
-
+      
     }
   }
 }

@@ -47,7 +47,7 @@
   ```
 git clone https://github.com/symenywong/laravel-vue-ssr-spa.git
   ```
-项目 clone 下来后执行如下操作, 进入当前文件夹, 例如, 当前项目文件夹为 laravel-vue-ssr-spa
+  项目 clone 下来后执行如下操作, 进入当前文件夹, 例如, 当前项目文件夹为 laravel-vue-ssr-spa
 ```
 cd laravel-vue-ssr-spa
 ```
@@ -111,7 +111,11 @@ cd laravel-vue-ssr-spa
   |--tests
   |--vendor
   |--resources
-  |--resources
+  |--md5File.js
+  |--packaje.json
+  |--webpack.config.js
+  |--webpack.mix.js
+  ...
   ```
 ### 内置插件
   ##### 前端

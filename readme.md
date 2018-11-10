@@ -8,15 +8,14 @@
 #### 基于 Laravel+Vue+Webpack的工程项目，包括前台系统、后台管理系统、移动端系统, 支持前台系统 SSR, 后台移动端前后分离SPA单页应用方案
 
 ## 方案
- - home   即前端用户可见页面, 采用 laravel-vue 服务端渲染方案
+ - home   即前端用户可见页面, 采用 laravel-vue 服务端渲染方案 SSR
  - admin  项目采用前后端分离架构 SPA
  - mobile 项目采用前后端分离架构 SPA
 
 
-
 ## Install
 
-##### 1. 环境需求
+#### 1. 环境需求
 
 * 1.1 php 环境
 
@@ -42,7 +41,7 @@
   npm -v
   ```
 
-##### 2. clone代码,安装依赖
+#### 2. clone代码,安装依赖
  * 2.1 clone或者下载项目代码, git clone
 
   ```
@@ -67,7 +66,7 @@ cd laravel-vue-ssr-spa
   NODE_PATH=/usr/local/bin/
   ```
 
-##### 3.现在运行服务,检查是否正确启动
+#### 3.现在运行服务,检查是否正确启动
    * 3.1 在项目目录执行, 启动 php 服务, 查看 ```http://localhost:8000/```
    ```
    php artisan serve

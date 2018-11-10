@@ -7,16 +7,12 @@
 
 #### 基于 Laravel+Vue+Webpack的工程项目，包括前台系统,后台管理系统,移动端系统, 支出前台系统 SSR, 后台移动端前后分离方案
 
-## Features
-- Server-side-render width Laravel
-- Vue supported for view template inside
-- Vue-Router/Vuex
-- SPA framework
-
 ## 方案
  - home   即前端用户可见页面, 采用 laravel-vue 服务端渲染方案
- - admin  项目采用前后端分离架构
- - mobile 项目采用前后端分离架构
+ - admin  项目采用前后端分离架构 SPA
+ - mobile 项目采用前后端分离架构 SPA 
+
+
 
 ## Install
 

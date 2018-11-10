@@ -7,6 +7,8 @@
 
 #### 基于 Laravel+Vue+Webpack的工程项目，包括前台系统、后台管理系统、移动端系统, 支持前台系统 SSR, 后台移动端前后分离SPA单页应用方案, 提供快速的上手方案
 
+##### laravel服务端渲染基于[spatie/laravel-server-side-rendering](https://github.com/spatie/laravel-server-side-rendering), 感谢!
+
 ## 方案
  - home   即前端用户可见页面, 采用 laravel-vue 服务端渲染方案 SSR
  - admin  项目采用前后端分离架构 SPA
@@ -140,9 +142,6 @@ cd laravel-vue-ssr-spa
   |--webpack.mix.js
   ...
   ```
-
-##### laravel服务端
- * [spatie/laravel-server-side-rendering](https://github.com/spatie/laravel-server-side-rendering)
 
 #### npm script 命令/package.json 说明
  * 项目内置命令如下

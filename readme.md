@@ -71,16 +71,32 @@ cd laravel-vue-ssr-spa
    ```
    php artisan serve
    ```
+
+   ![watch界面](https://github.com/symenywong/laravel-vue-ssr-spa/blob/master/public/images/serve.png?raw=true)
+
    * 3.2 dev 开发环境, 在项目目录执行, 启动 webpack 自动构建服务
    ```
    npm run watch
    ```
+
    ![watch界面](https://github.com/symenywong/laravel-vue-ssr-spa/blob/master/public/images/watch.png?raw=true)
 
-   * 3.3 buid 生产环境, 在项目目录执行, 启动 webpack 自动构建服务, 由于开启 md5文件名和 gzip 压缩, 此处需要等待一段时间
+   此时浏览器打开 http://localhost:8000/
+   ![dev界面](https://github.com/symenywong/laravel-vue-ssr-spa/blob/master/public/images/dev.png?raw=true)
+
+   ![admin界面](https://github.com/symenywong/laravel-vue-ssr-spa/blob/master/public/images/admin.png?raw=true)
+
+   ![mobile界面](https://github.com/symenywong/laravel-vue-ssr-spa/blob/master/public/images/mobile.png?raw=true)
+
+
+   * 3.3 buid 生产环境, 在项目目录执行, 启动 webpack 自动构建服务, 生成 jss、css以及对应的 gzip 压缩文件,
+
+   > 由于开启 md5文件名和 gzip 压缩, 此处需要等待一段时间
+
    ```
    npm run build
    ```
+
    ![build界面](https://github.com/symenywong/laravel-vue-ssr-spa/blob/master/public/images/build.png?raw=true)
 
 

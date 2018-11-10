@@ -100,8 +100,11 @@ cd laravel-vue-ssr-spa
 
    ![build界面](https://github.com/symenywong/laravel-vue-ssr-spa/blob/master/public/images/build.png?raw=true)
 
+   *全部准备工作已经完成, 现在可以愉快的开始写代码了!*
 
-### 内置插件
+------
+#### 了解更多? 请阅读一下内容
+
   项目目录
   ```
   |--app
@@ -137,8 +140,7 @@ cd laravel-vue-ssr-spa
   |--webpack.mix.js
   ...
   ```
-------
-#### 了解更多? 请阅读一下内容
+
 ### 内置插件
   ##### 前端
    * [vue](https://vuejs.org/v2/guide/)

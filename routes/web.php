@@ -20,6 +20,9 @@ Route::any('/mobile/{all}',function (){
 	return view('mobile.index');
 })->where(['all'=>'.*']);
 
+Route::get('/list/{url?}', 'ListController');
+Route::get('/page/{url?}', 'PageController');
+
 Route::get('/{url?}', 'VueController');
 
 // Route::any('/{all}',function (){

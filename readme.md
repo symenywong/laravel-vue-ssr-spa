@@ -217,6 +217,9 @@ cd laravel-vue-ssr-spa
  .sass('resources/sass/mobile/app.scss', 'public/mobile/css');
  ```
 
+#### 注意事项
+*  1. SSR工程无法使用 router-link 进行跳转:  PC 端前端渲染工程 SSR 内置集成 vue-router分发页面, 但如果使用 <router-link/> 进行跳转, 使用的是 vue 单页跳转逻辑, 与服务端渲染逻辑冲突, 因此请避免使用 <router-link/>标签进行跳转, a 链接跳转则无此问题;
+
 ---------
 
 #### 传送门

@@ -13,7 +13,7 @@ export default {
 
   },
   created() {
-    
+
   }
 }
 </script>
@@ -22,4 +22,3 @@ export default {
   height: 100%;
 }
 </style>
-

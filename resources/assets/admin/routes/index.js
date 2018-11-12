@@ -1,7 +1,9 @@
 import VueRouter from 'vue-router';
-import User from './user'
+import User from './user';
+import Home from './home'
 const routes = [
   ...User,
+  ...Home
 ]
 
 const router = new VueRouter({

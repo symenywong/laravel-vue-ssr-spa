@@ -71,15 +71,14 @@ export default {
             username: this.form.userName,
             password: this.form.password
           }
+          vm.$router.push(vm.loginCallback || '/admin/home');
+          return;
+          // 示例, 以下代码为 action 调用请求
           vm.$store.dispatch('loginRequest', formData).then(response => {
             this.isLoading = false
-            vm.$router.push(vm.loginCallback || '/admin/index')
-
+            vm.$router.push(vm.loginCallback || '/admin/home');
           }).catch(error => {
             this.isLoading = false
-            // vm.$Notice.warning({
-            //   title: '登录名或者密码有误'
-            // });
           })
 
         }

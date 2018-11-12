@@ -26,7 +26,9 @@
         "webpack-transform-modules-plugin": "^0.4.1"
     },
     "dependencies": {
+        "@antv/g2": "^3.3.4",
         "compression-webpack-plugin": "^1.1.11",
+        "countup": "^1.8.2",
         "cube-ui": "^1.12.2",
         "iview": "^3.1.4",
         "js-cookie": "^2.2.0",

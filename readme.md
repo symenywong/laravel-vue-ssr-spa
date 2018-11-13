@@ -71,14 +71,7 @@ cd laravel-vue-ssr-spa
 #### 3.现在运行服务,检查是否正确启动
    * 3.1 在项目目录执行, 启动 php 服务, 查看 ```http://localhost:8000/```
    ```
-   php artisan serve
-   ```
-
-   ![watch界面](https://github.com/symenywong/laravel-vue-ssr-spa/blob/master/public/images/serve.png?raw=true)
-
-   * 3.2 dev 开发环境, 在项目目录执行, 启动 webpack 自动构建服务
-   ```
-   npm run watch
+   php artisan serve & npm run watch
    ```
 
    ![watch界面](https://github.com/symenywong/laravel-vue-ssr-spa/blob/master/public/images/watch.png?raw=true)

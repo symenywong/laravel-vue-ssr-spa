@@ -3,7 +3,7 @@ export default [
   {
     path: '/admin/login',
     title: '登陆',
-    name: 'admin_login',
+    name: '_login',
     meta: {
       requireAuth: true
     },

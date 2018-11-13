@@ -31,51 +31,77 @@ export default {
   components:{ShrinkableMenu,LayoutHeader},
   data:function(){
     return {
-      theme2:'dark',
+      theme:'dark',
       menuList:[
         {
           title:'首页',
-          icon:'md-cube',
-          uri:'home',
+          icon:'ios-analytics',
+          uri:'_admin_home',
           children:[
             {
-              title:'首页1',
+              title:'概览',
               icon:'md-cube',
-              uri:'home',
-            },{
-              title:'首页2',
-              icon:'md-cube',
-              uri:'home',
+              uri:'_admin_home',
             }
           ]
         },{
           title:'商品',
-          icon:'md-cube',
-          uri:'home',
+          icon:'ios-flower',
+          uri:'_admin_goods',
           children:[
             {
-              title:'首页1',
-              icon:'md-cube',
-              uri:'home',
+              title:'商品列表',
+              icon:'ios-flower',
+              uri:'_admin_goods',
             },{
-              title:'首页2',
-              icon:'md-cube',
-              uri:'home',
+              title:'商品分类',
+              icon:'ios-bookmark',
+              uri:'_admin_goods',
             }
           ]
         },{
           title:'订单',
-          icon:'md-cube',
-          uri:'home',
+          icon:'md-appstore',
+          uri:'_admin_orders',
           children:[
             {
-              title:'首页1',
-              icon:'md-cube',
-              uri:'home',
+              title:'订单列表',
+              icon:'md-appstore',
+              uri:'_admin_orders',
             },{
-              title:'首页2',
-              icon:'md-cube',
-              uri:'home',
+              title:'发货明细',
+              icon:'logo-dropbox',
+              uri:'_admin_orders',
+            }
+          ]
+        },{
+          title:'会员',
+          icon:'ios-people',
+          uri:'_admin_members',
+          children:[
+            {
+              title:'会员列表',
+              icon:'md-appstore',
+              uri:'_admin_members',
+            },{
+              title:'会员等级',
+              icon:'logo-dropbox',
+              uri:'_admin_members',
+            }
+          ]
+        },{
+          title:'设置',
+          icon:'ios-settings',
+          uri:'_admin_setting',
+          children:[
+            {
+              title:'用户',
+              icon:'md-appstore',
+              uri:'_admin_setting',
+            },{
+              title:'权限',
+              icon:'logo-dropbox',
+              uri:'_admin_setting',
             }
           ]
         }

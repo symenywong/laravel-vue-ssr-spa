@@ -106,7 +106,5 @@ export default {
     background-size: cover;
     background-position: center;
     z-index:2;
-    // background-image: url('/images/defaultImages/adminLogin4.png');
-    background-image: url('/images/defaultImages/adminLogin.png');
 }
 </style>

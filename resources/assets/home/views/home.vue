@@ -28,13 +28,16 @@
                 同样的, 我们使用了一些优秀的 Vue 插件, 比如 Vue-Router , Vuex 以及 axios, 这些将提供更好的开发体验和更优雅数据交互方案!
             </p>
         </section>
+        <div class="flex-center padding-tb-10">
+            <Button type="text" @click="showResponseMsg">{{showResMsg?'隐藏信息':'查看服务端详细'}}</Button>
+        </div>
         <div class="margin-tb-10 font-1x flex-center">
             <a class="margin-rl-20" href="/list">列表-> a链接跳转</a>
             <a class="margin-rl-20" href="/page">文章-> a链接跳转</a>
             <router-link class="margin-rl-20" :to="{ name: 'list' }">列表-> router-link跳转</router-link>
             <router-link class="margin-rl-20" :to="{ name: 'page' }">文章-> router-link跳转</router-link>
         </div>
-        <div class="margin-tb-10 bg-gray border-r-5 padding-10">
+        <div class="margin-tb-10 resMsg bg-gray border-r-5 padding-10" v-show="showResMsg">
           <p v-for="(item,index) in server">{{index}}:{{item}}</p>
         </div>
     </div>
@@ -42,15 +45,29 @@
 
 <script>
 export default {
+  data:function(){
+    return {
+      showResMsg:false,
+    }
+  },
     computed: {
         server() {
             return this.$store.state.packages;
         },
     },
+    methods:{
+      showResponseMsg:function(){
+        this.showResMsg=!this.showResMsg;
+      }
+    }
 };
 </script>
 <style>
 .home-page{
   margin-top: 80px;
+}
+.resMsg{
+  height: 200px;
+  overflow-y: scroll;
 }
 </style>

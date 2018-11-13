@@ -1,15 +1,16 @@
 const state={
   menuShrink:false,
+  redirectUrl:'',//跳转返回地址
 };
 const getters={
-  menuShrink:state=>state.menuShrink
+  menuShrink:state=>state.menuShrink,
+  redirectUrl:state=>state.redirectUrl
 };
 const actions={
 
 };
 const mutations={
   toggleMenuShrink(state,payload){
-    console.log(111);
     state.menuShrink=!state.menuShrink;
   }
 };

@@ -43,6 +43,9 @@ export default {
           default:"#454552"
         }
     },
+    created:function(){
+      console.log(this.menuList,11);
+    },
     methods: {
         changeMenu (active) {
             this.$emit('on-change', active);

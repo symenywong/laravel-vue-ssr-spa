@@ -57,9 +57,7 @@ export default {
     };
   },
   computed:{
-    ...mapGetters({
-      'loginCallback':'loginCallback'
-    })
+    ...mapGetters(['redirectUrl'])
   },
   methods: {
     handleSubmit() {
@@ -71,12 +69,12 @@ export default {
             username: this.form.userName,
             password: this.form.password
           }
-          vm.$router.push(vm.loginCallback || '/admin/home');
+          vm.$router.push(vm.redirectUrl || '/admin/home');
           return;
           // 示例, 以下代码为 action 调用请求
           vm.$store.dispatch('loginRequest', formData).then(response => {
             this.isLoading = false
-            vm.$router.push(vm.loginCallback || '/admin/home');
+            vm.$router.push(vm.redirectUrl || '/admin/home');
           }).catch(error => {
             this.isLoading = false
           })

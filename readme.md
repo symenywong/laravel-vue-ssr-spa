@@ -230,3 +230,5 @@ cd laravel-vue-ssr-spa
 [Vuex](https://vuex.vuejs.org)
 
 [axios](https://www.npmjs.com/package/axios)
+
+[Cube UI](https://didi.github.io/cube-ui/#/zh-CN)

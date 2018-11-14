@@ -14,12 +14,9 @@
  - admin  项目采用前后端分离架构 SPA
  - mobile 项目采用前后端分离架构 SPA
 
+####  环境需求
 
-## Install, 只需3步即可
-
-#### 1. 环境需求
-
-* 1.1 php 环境
+* 1. php 环境
 
   **确保你已经安装composer**
 
@@ -27,7 +24,7 @@
 
   [composer 安装教程](https://docs.phpcomposer.com/00-intro.html)
 
-* 1.2 nodejs 环境
+* 2. nodejs 环境
 
   **确保你已经安装node,推荐安装最新稳定版node**
   > node 内置 npm , 已安装完成 node 即可, 无需单独安装 npm
@@ -43,8 +40,10 @@
   npm -v
   ```
 
-#### 2. clone代码,安装依赖
- * 2.1 clone或者下载项目代码, git clone
+## Install, 只需2步即可
+
+#### 1. clone代码,安装依赖
+ * 1.1 clone或者下载项目代码, git clone
 
   ```
 git clone https://github.com/symenywong/laravel-vue-ssr-spa.git
@@ -54,22 +53,22 @@ git clone https://github.com/symenywong/laravel-vue-ssr-spa.git
 cd laravel-vue-ssr-spa
 ```
 
-* 2.2 安装前端依赖
+* 1.2 安装前端依赖
 
   ```
   npm install
   ```
-* 2.3 安装composer 依赖
+* 1.3 安装composer 依赖
   ```
   composer install
   ```
-* 2.4 根目录手动修改.env 文件, 添加如下配置
+* 1.4 根目录手动修改.env 文件, 添加如下配置
   ```
   NODE_PATH=/usr/local/bin/
   ```
 
-#### 3.现在运行服务,检查是否正确启动
-   * 3.1 在项目目录执行, 启动 php 服务, 查看 ```http://localhost:8000/```
+#### 2.现在运行服务,检查是否正确启动
+   * 2.1 在项目目录执行, 启动 php 服务, 查看 ```http://localhost:8000/```
    ```
    php artisan serve & npm run watch
    ```
@@ -85,7 +84,7 @@ cd laravel-vue-ssr-spa
    <img src="https://github.com/symenywong/laravel-vue-ssr-spa/blob/master/public/images/mobile.png?raw=true" width="380">
 
 
-   * 3.3 buid 生产环境, 在项目目录执行, 启动 webpack 自动构建服务, 生成 jss、css以及对应的 gzip 压缩文件,
+   * 2.3 buid 生产环境, 在项目目录执行, 启动 webpack 自动构建服务, 生成 jss、css以及对应的 gzip 压缩文件,
 
    > 由于开启 md5文件名和 gzip 压缩, 此处需要等待一段时间
 

@@ -28,23 +28,23 @@ export default {
             hasStore: true,
             tabs: [{
               label: '首页',
-              name:'indexView',
+              name:'index',
               icon: '&#xe6c5;',
               query:{}
             }, {
               label: '分类',
               icon: '&#xe778;',
-              name:'catView',
+              name:'category',
               query:{}
             }, {
               label: '购物车',
               icon: '&#xe678;',
-              name:'cartView',
+              name:'cart',
               query:{}
             }, {
               label: '我的',
               icon: '&#xe600;',
-              name:'userView',
+              name:'user',
               query:{}
             }]
         }

@@ -1,9 +1,11 @@
 import VueRouter from 'vue-router';
-import User from './user'
+import Login from './login'
+import Home from './home';
+// import Category from './category';
 const routes = [
-  ...User
+  ...Home,
+  ...Login
 ]
-
 const router = new VueRouter({
   mode: 'history',
   routes

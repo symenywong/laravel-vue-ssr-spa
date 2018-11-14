@@ -8,6 +8,7 @@
         <title>Laravel</title>
         <link rel="stylesheet" href="https://unpkg.com/cube-ui/lib/cube.min.css">
         <link href="{{ asset('mobile/css/app.css') }}" rel="stylesheet">
+        <script src="https://unpkg.com/lib-flexible@0.3.2/flexible.js"></script>
     </head>
     <body>
       <div id="app">

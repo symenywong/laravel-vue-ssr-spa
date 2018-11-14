@@ -398,10 +398,11 @@ font-weight: 500;
 font-weight: 600;
 }
 /****************** 边距 *********************/
-.padding-tb-4 {
-padding-top: .053333rem;
-padding-bottom: .053333rem;
+.padding-tb-5 {
+padding-top: .07rem;
+padding-bottom: .07rem;
 }
+
 .padding-tb-10 {
 padding-top: .13rem;
 padding-bottom: .13rem;
@@ -854,7 +855,7 @@ border-radius: .13rem;
 }
 
 .line-height-normal {
-line-height: 1.2;
+  line-height: 1.0;
 }
 
 .line-height-big {

@@ -279,3 +279,5 @@ cd laravel-vue-ssr-spa
 [axios](https://www.npmjs.com/package/axios)
 
 [Cube UI](https://didi.github.io/cube-ui/#/zh-CN)
+
+[AntV地址](https://antv.alipay.com/zh-cn/index.html)

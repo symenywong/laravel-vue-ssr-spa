@@ -1,28 +1,4 @@
-// @font-face {
-//   font-family: 'iconfont';  /* project id 273951 */
-//   src: url('//at.alicdn.com/t/font_273951_722wjxnotlj.eot');
-//   src: url('//at.alicdn.com/t/font_273951_722wjxnotlj.eot?#iefix') format('embedded-opentype'),
-//   url('//at.alicdn.com/t/font_273951_722wjxnotlj.woff') format('woff'),
-//   url('//at.alicdn.com/t/font_273951_722wjxnotlj.ttf') format('truetype'),
-//   url('//at.alicdn.com/t/font_273951_722wjxnotlj.svg#iconfont') format('svg');
-// }
-@font-face {
-  font-family: 'iconfont';  /* project id 273951 */
-  src: url('//at.alicdn.com/t/font_273951_flkvtmlnywi.eot');
-  src: url('//at.alicdn.com/t/font_273951_flkvtmlnywi.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_273951_flkvtmlnywi.woff') format('woff'),
-  url('//at.alicdn.com/t/font_273951_flkvtmlnywi.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_273951_flkvtmlnywi.svg#iconfont') format('svg');
-}
 
-.iconfont {
-  font-family: "iconfont" !important;
-  font-size: 16px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
-}
 /*********通用样式文件***********/
 * {
   box-sizing: border-box;
@@ -306,10 +282,6 @@ body {
   padding-bottom: 0 !important;
 }
 
-.padding-3 {
-  padding: 3px;
-}
-
 .padding-t-10 {
   padding-top: 10px;
 }
@@ -345,23 +317,8 @@ body {
   padding: 10px;
 }
 
-.padding-tb-8 {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-.padding-tb-7 {
-  padding-top: 7px;
-  padding-bottom: 7px;
-}
-
 .padding-0 {
   padding: 0;
-}
-
-.padding-rl-7 {
-  padding-right: 7px;
-  padding-left: 7px;
 }
 
 .padding-tb-15 {
@@ -377,16 +334,6 @@ body {
 .padding-rl-20 {
   padding-right: 20px;
   padding-left: 20px;
-}
-
-.padding-tb-3 {
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-
-.padding-rl-3 {
-  padding-right: 3px;
-  padding-left: 3px;
 }
 
 .padding-tb-5 {
@@ -414,17 +361,6 @@ body {
 .padding-b-5 {
   padding-bottom: 5px;
 }
-.padding-rl-1 {
-  padding-right: 1px;
-  padding-left: 1px;
-}
-.padding-r-2 {
-  padding-right: 2px;
-}
-
-.padding-l-2 {
-  padding-left: 2px;
-}
 
 .padding-b-10 {
   padding-bottom: 10px;
@@ -434,9 +370,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-.margin-r-2 {
-  margin-right: 2px;
-}
+
 .margin-10 {
   margin: 10px;
 }
@@ -472,28 +406,16 @@ body {
   margin-bottom: 5px;
 }
 
-.margin-b-4 {
-  margin-bottom: 4px;
-}
-
 .margin-rl-10 {
   margin-left: 10px;
   margin-right: 10px;
-}
-
-.margin-rl-8 {
-  margin-right: 8px;
-  margin-left: 8px;
 }
 
 .margin-tb-5 {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.margin-rl-1 {
-  margin-right: 1px;
-  margin-left: 1px;
-}
+
 .margin-rl-5 {
   margin-right: 5px;
   margin-left: 5px;
@@ -532,13 +454,6 @@ body {
   margin-bottom: 20px;
 }
 
-.margin-l-6 {
-  margin-left: 6px;
-}
-
-.margin-r-6 {
-  margin-right: 6px;
-}
 /***********flex样式************/
 
 .flex-start {
@@ -648,8 +563,6 @@ body {
   justify-content: flex-start;
 }
 
-
-
 .flex-col-space-between {
   display: flex;
   flex-direction: column;
@@ -678,7 +591,6 @@ body {
 .clear-float {
   overflow: hidden;
 }
-//border
 
 .border-1px-t {
   border-top: 1px solid #ddd;
@@ -702,12 +614,7 @@ body {
   border: 1px solid #ccc;
 }
 
-.border-dark {
-  border-color: #404346;
-}
-.border-success{
-  border-color: $success;
-}
+
 .link-img {
   display: block;
   width: 100%;
@@ -727,48 +634,6 @@ body {
   box-sizing: content-box;
 }
 
-.button {
-  padding: 4px 14px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.button-warning {
-  color: #FF7043;
-  border-color: #FF7043;
-}
-
-.button-success {
-  color: $success;
-  border-color: $success;
-}
-
-.button-danger {
-  color: $red;
-  border-color: $red;
-}
-
-.button-warning:active {
-  color: $white;
-  background-color: #FEC163;
-}
-
-.badge {
-  padding: 1px 7px;
-  border-radius: 1px;
-  font-size: 10px;
-}
-
-.badge-danger {
-  background-color: rgba(254,200,201,1);
-  color: $white;
-}
-
-.badge-gray {
-  background-color: $gray-darker;
-  color: $white;
-}
 
 .border-r-3 {
   border-radius: 3px;

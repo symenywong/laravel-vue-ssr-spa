@@ -75,7 +75,7 @@ Laravel-Vue-SSR-SPA
 
   [node 官网](https://nodejs.org/en/)
 
-  安装完成, 检查node版本>8.0
+  安装完成, 检查node版本>8.6
   ```
   node -v
   ```

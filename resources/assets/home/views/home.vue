@@ -34,8 +34,8 @@
         <div class="margin-tb-10 font-1x flex-center">
             <a class="margin-rl-20" href="/list">列表-> a链接跳转</a>
             <a class="margin-rl-20" href="/page">文章-> a链接跳转</a>
-            <router-link class="margin-rl-20" :to="{ name: 'list' }">列表-> router-link跳转</router-link>
-            <router-link class="margin-rl-20" :to="{ name: 'page' }">文章-> router-link跳转</router-link>
+            <!-- <router-link class="margin-rl-20" :to="{ name: 'list' }">列表-> router-link跳转</router-link>
+            <router-link class="margin-rl-20" :to="{ name: 'page' }">文章-> router-link跳转</router-link> -->
         </div>
         <div class="margin-tb-10 resMsg bg-gray border-r-5 padding-10" v-show="showResMsg">
           <p v-for="(item,index) in server">{{index}}:{{item}}</p>

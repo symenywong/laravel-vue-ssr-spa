@@ -201,22 +201,22 @@ export default {
         },
         render_brand_sales: function() {
             var data = [{
-                genre: '音儿',
+                genre: 'iPhone',
                 sold: 275
             }, {
-                genre: '诗篇',
+                genre: '华为',
                 sold: 115
             }, {
-                genre: '恩裳',
+                genre: '三星',
                 sold: 120
             }, {
-                genre: '十二篮',
+                genre: 'OPPO',
                 sold: 350
             }, {
-                genre: '歌中歌',
+                genre: 'VIVO',
                 sold: 150
             }, {
-                genre: '奥丽嘉朵',
+                genre: '小米',
                 sold: 50
             }]; // G2 对数据源格式的要求，仅仅是 JSON 数组，数组的每个元素是一个标准 JSON 对象。
             // Step 1: 创建 Chart 对象
@@ -250,22 +250,22 @@ export default {
         },
         render_sales_quantity: function() {
             var data = [{
-                genre: '音儿',
+                genre: 'iPhone',
                 sold: 275
             }, {
-                genre: '诗篇',
+                genre: '华为',
                 sold: 115
             }, {
-                genre: '恩裳',
+                genre: '三星',
                 sold: 120
             }, {
-                genre: '十二篮',
+                genre: 'OPPO',
                 sold: 350
             }, {
-                genre: '歌中歌',
+                genre: 'VIVO',
                 sold: 150
             }, {
-                genre: '奥丽嘉朵',
+                genre: '小米',
                 sold: 250
             }]; // G2 对数据源格式的要求，仅仅是 JSON 数组，数组的每个元素是一个标准 JSON 对象。
             // Step 1: 创建 Chart 对象

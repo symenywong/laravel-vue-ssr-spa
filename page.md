@@ -1,65 +1,62 @@
-<p align="center">
-  <img src="https://laravel.com/assets/img/components/logo-laravel.svg">
-  <img style="margin-top:-10px" src="https://vuejs.org//images/logo.png" width="80" hegiht="80">
-</p>
+Laravel-Vue-SSR-SPA
+-------------------
 
-# Laravel-Vue-SSR-SPA
+ 提供服务端渲染/单页面渲染实现骨架, 同时集成webpack打包构建 MD5文件名/gzip 实现, 内置 vue-router,vuex, axios等 vue 套件, 提供 PC端 SSR 渲染方案, Admin 前后端分离单页面方案, Mobile 前后端分离单页面方案等三种常见方案;
 
-#### 基于 Laravel+Vue+Webpack的工程项目，包括前台系统、后台管理系统、移动端系统, 支持前台系统 SSR, 后台移动端前后分离SPA单页应用方案, 提供快速的上手方案
+----------
+项目地址
 
-##### laravel服务端渲染基于[spatie/laravel-server-side-rendering](https://github.com/spatie/laravel-server-side-rendering), 感谢!
-
-## 方案
- - home   即前端用户可见页面, 采用 laravel-vue 服务端渲染方案 SSR
- - admin  项目采用前后端分离架构 SPA
- - mobile 项目采用前后端分离架构 SPA
+> github https://github.com/symenywong/laravel-vue-ssr-spa.git
 
 ## 项目需求 ##
 
-基于 [Laravel](https://laravel.com) 和 [Vue](http://vuejs.org) 提供的强大的功能组合, 并根据已有项目实践经验, 提供完整的 laravel-vue 集成方案, 帮助快速搭建 Laravel-vue 集成项目,主要解决如下问题
+ 基于 [Laravel](https://laravel.com) 和 [Vue](http://vuejs.org) 提供的强大的功能组合, 并根据已有项目实践经验, 提供完整的 laravel-vue 集成方案, 帮助快速搭建 Laravel-vue 集成项目,主要解决如下问题
 
 1. SSR服务端渲染
 
- Laravel-vue 服务端渲染, 即 Laravel SSR 方案, 利于搜索引擎的 SEO 搜索抓取;
+  Laravel-vue 服务端渲染, 即 Laravel SSR 方案, 利于搜索引擎的 SEO 搜索抓取;
 
 2. SPA前后端分离
 
- Laravel-vue SPA框架, 即前后端分离下的单页面路由方案, 前后端通过 api 实现交互, 可以提供更加灵活的开发选择以及更高的开发效率, 同时潜在的一个优势是 app 可以与移动端h5共用同一套 api 体系,极大节省后期业务开发的重复工作;
+  Laravel-vue SPA框架, 即前后端分离下的单页面路由方案, 前后端通过 api 实现交互, 可以提供更加灵活的开发选择以及更高的开发效率, 同时潜在的一个优势是 app 可以与移动端h5共用同一套 api 体系,极大节省后期业务开发的重复工作;
 
 3. 静态资源缓存
 
- 熟悉前端开发的同学一定碰到过需要解决浏览器缓存静态资源造成的问题, 比如 js/css 等;
+  熟悉前端开发的同学一定碰到过需要解决浏览器缓存静态资源造成的问题, 比如 js/css 等;
 在 weback 的帮助下, js的编译提供 md5 文件命名方案, 可以有效的避免静态文件缓存造成的问题;
 
 4. gzip 文件压缩
 
- 在前端优化的方案里, 开启服务端 gzip压缩是一种非常好的减少资源请求的方案;
+  在前端优化的方案里, 开启服务端 gzip压缩是一种非常好的减少资源请求的方案;
 同样的, 在 webpack 里使用 ```compression-webpack-plugin``` 输出 gzip 文件包, 实现 js/css 文件体积非常明显压缩(约60%-80%);
 
 5. 移动端适配问题
 
- 如何解决移动端适配的问题是衡量一个移动端用户体验的基础判断标准,框架采用淘H5页面的终端适配方案,
+  如何解决移动端适配的问题是衡量一个移动端用户体验的基础判断标准,框架采用淘H5页面的终端适配方案,
 文章详见```https://github.com/amfe/article/issues/17```, 以基础 1rem=75px,进行适配, 对内置css 样式均进行了适配优化;
 
 6. 内置 UI 框架
 
- 6.1 admin工程内置 iview 作为后台UI框架, 蚂蚁金服的AntV/G2作为报表插件, 这两者都提供了优雅的界面设计和丰富全面的文档说明
+  6.1 admin工程内置 iview 作为后台UI框架, 蚂蚁金服的AntV/G2作为报表插件, 这两者都提供了优雅的界面设计和丰富全面的文档说明
 
- [iview地址](https://www.iviewui.com/docs/guide/introduce)
+  [iview地址](https://www.iviewui.com/docs/guide/introduce)
 
- [AntV地址](https://antv.alipay.com/zh-cn/index.html)
+  [AntV地址](https://antv.alipay.com/zh-cn/index.html)
 
- 6.2 mobile工程内置Cube-UI框架, 同样的, 你也可以使用 vux 框架作为移动端 UI框架
+  6.2 mobile工程内置Cube-UI框架, 同样的, 你也可以使用 vux 框架作为移动端 UI框架
 
- [Cube-UI地址](https://didi.github.io/cube-ui/#/zh-CN)
+  [Cube-UI地址](https://didi.github.io/cube-ui/#/zh-CN)
 
- [VUX地址](https://vux.li/#/zh-CN/)
+  [VUX地址](https://vux.li/#/zh-CN/)
 
- 6.3 PC 端内置iview,  iview 作为优秀的后台 UI 框架, 在此仅作为内置示例, 你可以选择自己喜欢的 UI 框架作为替换
+  6.3 PC 端内置iview,  iview 作为优秀的后台 UI 框架, 在此仅作为内置示例, 你可以选择自己喜欢的 UI 框架作为替换
 
- ##### laravel服务端渲染基于[spatie/laravel-server-side-rendering](https://github.com/spatie/laravel-server-side-rendering), 感谢!
+  ##### laravel服务端渲染基于[spatie/laravel-server-side-rendering](https://github.com/spatie/laravel-server-side-rendering), 感谢!
 
-
+## 方案集成
+ - home   即前端用户可见页面, 采用 laravel-vue 服务端渲染方案 SSR
+ - admin  项目采用前后端分离架构 SPA
+ - mobile 项目采用前后端分离架构 SPA
 
 ####  环境需求
 
@@ -78,11 +75,11 @@
 
   [node 官网](https://nodejs.org/en/)
 
-  安装完成, 检查node版本>10.0
+  安装完成, 检查node版本>8.0
   ```
   node -v
   ```
-  npm 版本>5.6
+  npm 版本>5.3
   ```
   npm -v
   ```
@@ -150,7 +147,7 @@ cd laravel-vue-ssr-spa
   ```
   |--app
   |  |--Http
-  |     |--Controllers
+  |  |   |--Controllers
   |--bootstrap
   |--config
   |--database
@@ -159,17 +156,17 @@ cd laravel-vue-ssr-spa
   |--public
   |--resources                       // 资源文件
   |  |--assets                       // vue 模板渲染
-  |     |--admin
-  |     |--home
-  |     |--mobile
+  |  |   |--admin
+  |  |   |--home
+  |  |   |--mobile
   |  |--sass                        // sass style
-  |     |--admin
-  |     |--home
-  |     |--mobile
+  |  |   |--admin
+  |  |   |--home
+  |  |   |--mobile
   |  |--views                       // laravel 解析blade模板
-  |     |--admin
-  |     |--home
-  |     |--mobile
+  |  |   |--admin
+  |  |   |--home
+  |  |   |--mobile
   |--routes
   |--storage
   |--tests

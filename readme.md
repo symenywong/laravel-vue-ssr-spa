@@ -38,7 +38,7 @@
 
 5. 移动端适配问题
 
- 如何解决移动端适配的问题是衡量一个移动端用户体验的基础判断标准,框架采用淘H5页面的终端适配方案,
+ 如何解决移动端适配的问题是衡量一个移动端用户体验的基础判断标准,框架采用手淘H5页面的终端适配方案,
 文章详见```https://github.com/amfe/article/issues/17```, 以基础 1rem=75px,进行适配, 对内置css 样式均进行了适配优化;
 
 6. 内置 UI 框架
@@ -124,6 +124,8 @@ cd laravel-vue-ssr-spa
 
    此时浏览器打开 http://localhost:8000/, 查看各工程界面
 
+   > 注意: 如果发现出现找不到'index/js/entry-client.js', 那么先执行下npm run build 构建一下文件
+
    ![dev界面](https://github.com/symenywong/laravel-vue-ssr-spa/blob/master/public/images/dev.png?raw=true)
 
    ![admin界面](https://github.com/symenywong/laravel-vue-ssr-spa/blob/master/public/images/admin.png?raw=true)
@@ -142,6 +144,7 @@ cd laravel-vue-ssr-spa
    ![build界面](https://github.com/symenywong/laravel-vue-ssr-spa/blob/master/public/images/build.png?raw=true)
 
    *全部准备工作已经完成, 现在可以愉快的开始写代码了!*
+
 
 ------
 #### 了解更多? 请阅读以下内容

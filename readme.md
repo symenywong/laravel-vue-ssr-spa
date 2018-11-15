@@ -5,7 +5,7 @@
 
 # Laravel-Vue-SSR-SPA
 
-#### 基于 Laravel+Vue+Webpack的工程项目，包括前台系统、后台管理系统、移动端系统, 支持前台系统 SSR, 后台移动端前后分离SPA单页应用方案, 提供快速的上手方案
+#### 基于 Laravel+Vue+Webpack的工程项目，包括前台系统、后台管理系统、移动端系统, 支持前台系统 SSR, 后台移动端前后分离SPA单页应用方案, 提供快速的上手方案, 欢迎star
 
 ##### laravel服务端渲染基于[spatie/laravel-server-side-rendering](https://github.com/spatie/laravel-server-side-rendering), 感谢!
 

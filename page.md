@@ -4,7 +4,7 @@ Laravel-Vue-SSR-SPA
  提供服务端渲染/单页面渲染实现骨架, 同时集成webpack打包构建 MD5文件名/gzip 实现, 内置 vue-router,vuex, axios等 vue 套件, 提供 PC端 SSR 渲染方案, Admin 前后端分离单页面方案, Mobile 前后端分离单页面方案等三种常见方案;
 
 ----------
-项目地址
+项目地址, 欢迎star
 
 > github https://github.com/symenywong/laravel-vue-ssr-spa.git
 

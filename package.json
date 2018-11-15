@@ -12,20 +12,18 @@
         "copy": "node ./md5File.js"
     },
     "devDependencies": {
-        "axios": "^0.18",
         "babel-plugin-syntax-dynamic-import": "^6.18.0",
-        "bootstrap": "^4.0.0",
         "clean-webpack-plugin": "^0.1.19",
         "cross-env": "^5.1",
-        "jquery": "^3.2",
         "laravel-mix": "^2.0",
         "lodash": "^4.17.5",
         "popper.js": "^1.12",
-        "vue": "^2.5.7",
         "vux-loader": "^1.2.9",
         "webpack-transform-modules-plugin": "^0.4.1"
     },
     "dependencies": {
+        "vue": "^2.5.7",
+        "axios": "^0.18",
         "@antv/g2": "^3.3.4",
         "compression-webpack-plugin": "^1.1.11",
         "countup": "^1.8.2",

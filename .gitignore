@@ -4,6 +4,8 @@
 /public/mobile
 /public/admin
 /public/index
+/resources/views/admin/index.blade.php
+/resources/views/mobile/index.blade.php
 /public/*.js
 /public/mix-manifest.json
 /storage/*.key
